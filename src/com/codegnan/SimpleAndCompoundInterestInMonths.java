@@ -41,7 +41,7 @@ public class SimpleAndCompoundInterestInMonths{
 								//apply both formulas
 							double simpleInterest = (P*R*convertedTime)/100;
 
-							double compoundInterest = P* Math.pow((1+(R/100), convertedTime));
+							double compoundInterest = P* Math.pow(1+R/100,convertedTime);
 								//print as required
 							System.out.println("the Simple interest is : "+ simpleInterest);
 							System.out.println("the total amount with SI is : " +( simpleInterest+P));
