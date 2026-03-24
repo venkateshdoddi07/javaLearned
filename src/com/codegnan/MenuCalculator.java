@@ -97,7 +97,7 @@ public class MenuCalculator {
                         System.out.println("------------------------------------------");
                         System.out.printf("  %.2f %s %.2f = %.2f%n",
                                           num1, operation, num2, result);
-                        System.out.println("------------------------------------------");
+                        System.out.println("-------------------------------------");
                     }
 
                 } else {
