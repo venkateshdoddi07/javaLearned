@@ -42,5 +42,6 @@ double TotalAmount = CompoundInterest+P;
 System.out.printf("the compound interest is : %.2f/n ", CompoundInterest);
 System.out.printf("the total amount is : %.2f/n ", TotalAmount);
 
+
 }
 }
