@@ -11,8 +11,7 @@ public class FactorialNumber {
 		int product=1;
 		for(int i=1;i<=N;i++) {
 			
-	product=product*i;
-			
+			product=product*i;
 			
 		}
 		System.out.println("Facorial of a number "+N+ " zis : "+product );
