@@ -9,7 +9,7 @@ Problem:
 
 
 
-package com.codegnan;
+package com.homework;
 import java.util.Scanner;
 
 public class BankAccountStatus {
