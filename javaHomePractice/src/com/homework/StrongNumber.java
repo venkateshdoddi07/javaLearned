@@ -21,20 +21,31 @@ public class StrongNumber {
 	public static void main(String[] args) {
 		Scanner scn=new Scanner(System.in);
 		int n=scn.nextInt();//145
-		
 		int originalNumber=n;
+		//count logic 
+		int count=0;
+		while(n>0) {
+			int digitCount=n%10;
+			count=count+digitCount;
+			n/=10;
+		}
 		int sum=0;
 		int fact=1;
+		int o=originalNumber;
+		for(int i=0;i<=count;i++) { //count based iterations
+			//factorial logic
+			int digitFact=o%10;//145
+			
+			fact=fact*digitFact;
 		
-		while(n>0) {
-			int digit=n%10;//5
-			fact=fact*digit;
-			digit--;
 			sum=sum+fact;
+			o/=10;
+			
 			
 		}
+		
 		if(sum==originalNumber) {
-			System.out.println("th is strong number");
+			System.out.println("this is strong number");
 		}else {
 			System.out.println("not a strong number");
 		}

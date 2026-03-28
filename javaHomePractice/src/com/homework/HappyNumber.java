@@ -11,25 +11,30 @@ package com.homework;
 1² + 0² + 0² = 1
  */
 import java.util.Scanner;
+
 public class HappyNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();//19
 
-	public static void main(String[] args) {
-		Scanner scanner=new Scanner(System.in);
-				int number=scanner.nextInt(); //19
-				
-				int sum=0;
-				int square=2;
-				
-				while(number>0) {
-					int digit=number%10;//9,1
-					sum=(int)(sum+Math.pow(digit, square));
-					number/=10;
-			
-				}
-				System.out.println((int)sum);
-				
-		
-		scanner.close();
-	}
+        int result = num;
 
+        while (result != 1 && result != 4) {//19>1 && 19>4
+            int sum = 0;
+
+            while (result > 0) {//19>0
+                int digit = result % 10;//9--->
+                sum += digit * digit;
+                result /= 10;
+            }
+
+            result = sum;
+        }
+
+        if (result == 1) {
+            System.out.println("Happy Number");
+        } else {
+            System.out.println("Not a Happy Number");
+        }
+    }
 }
