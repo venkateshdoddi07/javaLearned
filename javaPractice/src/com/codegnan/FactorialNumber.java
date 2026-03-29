@@ -17,11 +17,6 @@ public class FactorialNumber {
 		System.out.println("Facorial of a number "+N+ " zis : "+product );
 		
 		
-		
-		
-		
-		
-		
 		scn.close();
 		
 	}

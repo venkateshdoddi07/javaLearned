@@ -15,6 +15,5 @@ int number=scanner.nextInt();
 String result=(number%2==0)?"even":"odd";
 
 System.out.println("the result is " +result);
-
 }
 }

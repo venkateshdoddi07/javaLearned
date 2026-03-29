@@ -13,15 +13,15 @@ return; // this plays a major role to break the execution
 }
 
 	char grade=(marks>=90)?'A':
-													(marks>=80)?'B':
-															(marks>=70)?'C':
-																(marks>=60)?'D':
-																	(marks>=50)?'E':'F';
+								(marks>=80)?'B':
+											(marks>=70)?'C':
+													(marks>=60)?'D':
+														(marks>=50)?'E':'F';
 String description= (marks>=90)?"Excellent":
-													(marks>=80)?"very good":
-															(marks>=70)?"good":
-																(marks>=60)?"satisfactory":
-																	(marks>=50)?"pass":"fail";
+											(marks>=80)?"very good":
+												(marks>=70)?"good":
+														(marks>=60)?"satisfactory":
+															(marks>=50)?"pass":"fail";
 
 System.out.println("the grade is : " +grade);
 System.out.println("the description is : " +description);

@@ -13,7 +13,6 @@ public class TableMultiplication {
 			System.out.println(table + "*" + i +"=" + (table*i));
 		}
 		
-		
 		scanner.close();
 		
 	}

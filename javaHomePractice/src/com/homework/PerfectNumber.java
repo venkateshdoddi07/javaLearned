@@ -40,7 +40,6 @@ public class PerfectNumber {
         	i++;
         }
         
-        
         if(sumDigit==originalNumber) {
         	System.out.println("it is perfect number");
         }else {
