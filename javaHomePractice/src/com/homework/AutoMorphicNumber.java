@@ -23,14 +23,14 @@ public class AutoMorphicNumber {
         int temp = n;//  original number in temporary value
 
         // Compare digits from last
-        while (temp > 0) {  //25>0 
-            if (temp % 10 != square % 10) { //
+        while (temp > 0) {  //25>0 ,2>0
+            if (temp % 10 != square % 10) { //5!=5-->2!=5
                 System.out.println("Not an Automorphic Number");
                 scn.close();
                 return;
             }
-            temp = temp / 10;
-            square = square / 10;
+            temp = temp / 10;//2-->0
+            square = square / 10;//62--->6
         }
 
         System.out.println("Automorphic Number");

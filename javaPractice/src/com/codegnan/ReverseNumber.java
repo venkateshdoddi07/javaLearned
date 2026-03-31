@@ -9,7 +9,7 @@ public class ReverseNumber {
 		
 		System.out.println("enter the number");
 		
-	int number =scanner.nextInt();
+	int number =scanner.nextInt(); //543
 	int  originalNumber=number;
 	int reverseNumber=0;
 	if(number<0) {
@@ -18,9 +18,9 @@ public class ReverseNumber {
 	}
 	
 	while(number>0) {
-		int lastDigit=number % 10;
-		reverseNumber=reverseNumber*10 +lastDigit;
-		number /=10;
+		int lastDigit=number % 10;//345
+		reverseNumber=reverseNumber*10 +lastDigit; //0+3,3*10 +4=34--->34*10=340+5=345
+		number /=10;//0
 		
 		
 	}

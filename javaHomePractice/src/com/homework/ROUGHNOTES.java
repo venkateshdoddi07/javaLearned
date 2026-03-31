@@ -3,41 +3,54 @@ package com.homework;
 import java.util.Scanner;
 
 public class ROUGHNOTES {
-	//sum of digits =products of digits
+	// sum of digits =products of digits
 
 	public static void main(String[] args) {
-		Scanner scn=new Scanner(System.in);
-		int n=scn.nextInt();//1153
-		int on=n;
-		int sum=0;
-		int product=1;
 		
-		//sum calculation
-		while(n>0) {
-			int digit=n%10;
-			sum=sum+digit;
-			n/=10;
+		
+				Scanner sc = new Scanner(System.in);
+				
+				int num = sc.nextInt();
+				
+				int temp = num;
+				// This will store reversed EVEN digits only
+				int evenRev = 0;//642
+				
+				while (temp > 0) {
+					// Get last digit
+					int digit = temp % 10;
+					// Check if digit is even
+						if (digit % 2 == 0) {
+						// Build reversed number of even digits
+						evenRev = evenRev * 10 + digit;
+					}
+					// Remove last digit
+						temp /= 10;
+				}
+				
+				int result = 0; // Final result number
+				int place = 1; // Keeps track of digit position (1,10,100,...)
+				while (num > 0) {
+					// Extract last digit from original number
+					int digit = num % 10;//
+					// If digit is even → replace with reversed even digit
+					if (digit % 2 == 0) {
+						// Take last digit from evenRev
+						int lastEven = evenRev % 10;//2
+						// Place it in correct position in result
+						result = lastEven * place + result;
+						// Remove that digit from evenRev
+						evenRev /= 10;
+					} else {
+						// If odd → keep it as it is
+						result = digit * place + result;
+					}
+					// Move to next position (units → tens → hundreds...)
+					place *= 10;
+					// Remove last digit from original number
+					num /= 10;
+				}
+				// Print final result
+				System.out.println("Result = " + result);
+			}
 		}
-		
-		n=on;
-		//product calculation
-		while(n>0) {
-			int productdigit=n%10;
-			product=product*productdigit;
-			n/=10;
-		}
-			
-		//spy formula
-		if(sum==product) {
-			System.out.println("the given number is spy number");
-		}else {
-			System.out.println("the given number is not a spy number");
-		}
-		
-		
-	
-			
-		scn.close();
-	}
-
-}
