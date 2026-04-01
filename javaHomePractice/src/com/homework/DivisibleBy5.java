@@ -13,6 +13,9 @@ public class DivisibleBy5 {
 		String result=(number%5==0)?"divisible by 5":"not divisible by 5";
 		
 		System.out.println("the entered number is "+ result);
+	
+	scanner.close();
+	
 	}
 
 }

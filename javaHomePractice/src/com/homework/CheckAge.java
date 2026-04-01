@@ -17,6 +17,7 @@ public class CheckAge {
 				(age>18 && age<60)?"he is an adult":
 					(age>60 && age<=150)?"he is an elderly person":"enter age greater then 0 and less then 150";
 		System.out.println(result);
+		scn.close();
 	}
 
 }

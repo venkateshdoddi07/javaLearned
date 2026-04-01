@@ -21,7 +21,7 @@ public class StrongNumber {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
 
-        int n = scn.nextInt(); // 145
+        int n = scn.nextInt(); // 145----> factorial of its individual number and its sum
         int originalNumber = n;
         int sum = 0;
 

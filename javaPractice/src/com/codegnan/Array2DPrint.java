@@ -1,7 +1,7 @@
 package com.codegnan;
 
 
-public class Print2DArray {
+public class Array2DPrint {
 
 	public static void main(String[] args) {
 

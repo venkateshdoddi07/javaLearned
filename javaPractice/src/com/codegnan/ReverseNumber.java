@@ -10,7 +10,6 @@ public class ReverseNumber {
 		System.out.println("enter the number");
 		
 	int number =scanner.nextInt(); //543
-	int  originalNumber=number;
 	int reverseNumber=0;
 	if(number<0) {
 		

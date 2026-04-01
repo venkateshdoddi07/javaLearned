@@ -26,13 +26,12 @@ public class AutoMorphicNumber {
         while (temp > 0) {  //25>0 ,2>0
             if (temp % 10 != square % 10) { //5!=5-->2!=5
                 System.out.println("Not an Automorphic Number");
-                scn.close();
+               
                 return;
             }
             temp = temp / 10;//2-->0
             square = square / 10;//62--->6
         }
-
         System.out.println("Automorphic Number");
 
         scn.close();

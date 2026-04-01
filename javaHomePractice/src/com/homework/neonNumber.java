@@ -25,9 +25,9 @@ public class neonNumber {
 		
 		//sum of that square number == original number
 		while(squareValue!=0) {
-			int digit =squareValue%10;//81%10=8
+			int digit =squareValue%10;//81%10=1,8
 			sumOfSquare+=digit;
-			squareValue/=10;//
+			squareValue/=10;//8,0
 					
 		}
 		if (sumOfSquare == originalNumber) {

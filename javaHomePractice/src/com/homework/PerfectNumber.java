@@ -23,22 +23,22 @@ public class PerfectNumber {
         
         int sumDigit=0;
         
-//        for(int i=1;i<number;i++) {
-//        	
-//        	if( number%i==0) {
-//        		sumDigit+=i;
-//        		
-//        	}
-//        	
-//        }
-        
-        int i=1;
-        
-        while(number%i==0) {
-        	sumDigit=sumDigit+i;
+        for(int i=1;i<number;i++) {
         	
-        	i++;
+        	if( number%i==0) {
+        		sumDigit+=i;
+        		
+        	}
+        	
         }
+        
+//        int i=1;
+//        
+//        while(number%i==0) {
+//        	sumDigit=sumDigit+i;
+//        	
+//        	i++;
+//        }
         
         if(sumDigit==originalNumber) {
         	System.out.println("it is perfect number");
