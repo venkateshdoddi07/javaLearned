@@ -3,54 +3,35 @@ package com.homework;
 import java.util.Scanner;
 
 public class ROUGHNOTES {
-	// sum of digits =products of digits
+	
 
 	public static void main(String[] args) {
 		
 		
 				Scanner sc = new Scanner(System.in);
 				
-				int num = sc.nextInt();
-				
-				int temp = num;
-				// This will store reversed EVEN digits only
-				int evenRev = 0;//642
-				
-				while (temp > 0) {
-					// Get last digit
-					int digit = temp % 10;
-					// Check if digit is even
-						if (digit % 2 == 0) {
-						// Build reversed number of even digits
-						evenRev = evenRev * 10 + digit;
+				int rows = sc.nextInt();
+				for(int i=1;i<=rows;i++) {
+					for(int j=1;j<=rows-i;j++) {
+						System.out.print(" ");
 					}
-					// Remove last digit
-						temp /= 10;
+					for(int k=1;k<=i;k++) {
+						System.out.print("* ");
+					}
+					System.out.println();
+					
 				}
 				
-				int result = 0; // Final result number
-				int place = 1; // Keeps track of digit position (1,10,100,...)
-				while (num > 0) {
-					// Extract last digit from original number
-					int digit = num % 10;//
-					// If digit is even → replace with reversed even digit
-					if (digit % 2 == 0) {
-						// Take last digit from evenRev
-						int lastEven = evenRev % 10;//2
-						// Place it in correct position in result
-						result = lastEven * place + result;
-						// Remove that digit from evenRev
-						evenRev /= 10;
-					} else {
-						// If odd → keep it as it is
-						result = digit * place + result;
+				for(int i=rows-1;i>=1;i--) {
+					for(int j=1;j<=rows-i;j++) {
+						System.out.print(" ");
+						
 					}
-					// Move to next position (units → tens → hundreds...)
-					place *= 10;
-					// Remove last digit from original number
-					num /= 10;
+					for(int k=1;k<=i;k++) {
+						System.out.print("* ");
+					}
+					System.out.println();
 				}
-				// Print final result
-				System.out.println("Result = " + result);
+				
 			}
 		}
