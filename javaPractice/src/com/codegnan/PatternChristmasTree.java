@@ -2,13 +2,14 @@ package com.codegnan;
 
 public class PatternChristmasTree {
 	// value 5 is permenetly provided to the height variable.
-	public static final int height = 5;
+	//public static final int height = 5;
 	   // Main Function (starting point of program execution)
 	   public static void main(String[] args) {
+		   int height=5;
 	       // Assigning initial width of the pyramid
 	       int width = 5;
 	       // Assigning space value (used for alignment/indentation of tree)
-	       int space = width * 5;
+	       int space = width * 3;
 	       // Variable to control starting point of inner loop
 	       int x = 1;
 	       // Loop to print upper part of the tree (multiple pyramids)
