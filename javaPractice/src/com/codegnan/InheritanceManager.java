@@ -10,7 +10,7 @@ public class InheritanceManager  extends InheritanceEmployee{
 				
 	}
 	
-	public void displayDetails() {
+	public void displayManagerDetails() {
 		System.out.println("manager details");
 		System.out.println("manager name: "+name);
 		System.out.println("manager salary "+ salary);
