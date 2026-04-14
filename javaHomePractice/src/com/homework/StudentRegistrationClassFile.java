@@ -49,19 +49,25 @@ public class StudentRegistrationClassFile {
 	String name;
 	int rollNumber;
 	int grade;
-	
+	boolean isValid=true;
 	public StudentRegistrationClassFile(String name, int rollNumber, int grade) {
 
 	    if (name == null || name.equals("")) {
-	        throw new IllegalArgumentException("Name cannot be empty");
+	      System.out.println("Name cannot be empty");
+	      isValid=false;
+	      return;
 	    }
 
-	    if (rollNumber <= 0) {
-	        throw new IllegalArgumentException("Error: Roll number must be positive");
+	    if (rollNumber < 1) {
+	    	System.out.println("Error: Roll number must be positive");
+	    	isValid=false;
+	    	return;
 	    }
 
 	    if (grade < 1 || grade > 12) {
-	        throw new IllegalArgumentException("Error: Grade level must be between 1 and 12");
+	    	System.out.println("Error: Grade level must be between 1 and 12");
+	    	isValid=false;
+	    	return;
 	    }
 
 	    this.name = name;
@@ -70,6 +76,9 @@ public class StudentRegistrationClassFile {
 	}
 	
 	public void showProfile() {
+		if (!isValid) {
+            return;  // don't print anything if invalid
+        }
 		System.out.println("student name is : "+this.name);
 		System.out.println("student rollNumber is: "+this.rollNumber);
 		System.out.println("student grade is : "+this.grade);
