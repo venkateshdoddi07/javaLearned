@@ -16,7 +16,7 @@ public class Main {
 //			mgr1.calculateSalary();
 //			mgr1.calculateSalary(5000);
 //			mgr1.calculateSalary(5000,7000);
-		Figure f=new Figure(10,10);
+//		Figure f=new Figure(10,10);
 //		f.area();
 //
 //		
@@ -29,10 +29,25 @@ public class Main {
 		
 		//dynamic methid dispatch
 		
-		f=new Rectangle(5,6);
-		System.out.println(f.area());
-		f=new Triangle(10,5);
-		System.out.println(f.area());
+//		f=new Rectangle(5,6);
+//		System.out.println(f.area());
+//		f=new Triangle(10,5);
+//		System.out.println(f.area());
+		
+		
+		
+		Shape s1=new Shape();
+		System.out.println(s1.calculateVolume());
+		
+		s1=new cube();
+		System.out.printf("%.2f",s1.calculateVolume());
+		System.out.println();
+		
+		
+		s1=new cuboid();
+		System.out.printf("%.2f",s1.calculateVolume());
+		
+		
 		
 		
 			
