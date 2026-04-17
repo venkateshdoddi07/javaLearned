@@ -19,6 +19,7 @@ public class StringAnagrams {
 		if(s1.length()!=s2.length()) {
 			System.out.println("not a Anagram");
 			return;
+			
 		}
 		
 		//assume strings are anagrams
@@ -59,7 +60,7 @@ public class StringAnagrams {
 		}
 		
 		
-		scn.close();
+		//scn.close();
 	}
 
 }
