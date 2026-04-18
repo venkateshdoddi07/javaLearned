@@ -10,13 +10,15 @@ public class PrintDuplicateString {
 		
 		
 		for(int i=0;i<str.length();i++) { //0<4
+			char ch=str.charAt(i); 
 			for(int j=i+1;j<str.length();j++) { //0<0
-			char ch=str.charAt(i); //ch=v
+		
 			
 			if(ch==str.charAt(j)) { //v==
 				if(!storeDuplicate.contains(str.charAt(i) + "")) {
-					storeDuplicate += str.charAt(i);
+					storeDuplicate += ch;
 				}
+				break;
 			}
 			}
 			
