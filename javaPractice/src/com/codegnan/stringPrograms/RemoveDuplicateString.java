@@ -21,12 +21,13 @@ public class RemoveDuplicateString {
 				}
 			}
 			if(!found) {
+				
+				
 				result=result+ch;
 			}
 		}
 		System.out.println(result);
-		
-		
+	
 		scn.close();
 	}
 
