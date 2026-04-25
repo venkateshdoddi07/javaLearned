@@ -26,7 +26,7 @@ public class StringCheckPalindrome {
 		
 		//counts vowels and consonants
 		
-		int vowels=0;
+		/*int vowels=0;
 		int consonants=0;
 		
 		for(char c:str.toLowerCase().toCharArray()) {
@@ -42,7 +42,9 @@ public class StringCheckPalindrome {
 		System.out.println(consonants);
 
 		
+		*/
 		
+		//
 		
 		
 		
