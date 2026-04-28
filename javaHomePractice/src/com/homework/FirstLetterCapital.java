@@ -19,6 +19,6 @@ public class FirstLetterCapital {
 		}
 		System.out.println(sb.toString());
 
-	}
+	}      
 
 }
