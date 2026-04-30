@@ -1,0 +1,25 @@
+package com.codegnan.collection;
+
+import java.util.PriorityQueue;
+
+import com.codegnan.stringPrograms.Student;
+
+public class PriorityQueueExample {
+	
+	public static void main(String[] args) {
+		PriorityQueue<Integer> pq=new PriorityQueue<>();
+		pq.add(5);
+		pq.add(3);
+		pq.add(1);
+		pq.add(4);
+		pq.add(2);
+		pq.add(6);
+		System.out.println(pq);
+		
+		PriorityQueue<Student>pq1=new PriorityQueue<>(new MyComparable());
+		//pq.add(new Student(111,"malli"))
+		
+		
+	}
+
+}

@@ -18,9 +18,5 @@ public class ArrayListExample {
 		studentList.add(0,new Student (111,"mahi",22));
 		System.out.println(studentList);
 
-
-//example with custom object home work
-		
-	}
-
-}
+	}}
+//example with custom object ````````````````````````````````````` work  
