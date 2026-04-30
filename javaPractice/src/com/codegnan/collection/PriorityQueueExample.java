@@ -16,7 +16,7 @@ public class PriorityQueueExample {
 		pq.add(6);
 		System.out.println(pq);
 		
-		PriorityQueue<Student>pq1=new PriorityQueue<>(new MyComparable());
+		//PriorityQueue<Student>pq1=new PriorityQueue<>(new MyComparable());
 		//pq.add(new Student(111,"malli"))
 		
 		
