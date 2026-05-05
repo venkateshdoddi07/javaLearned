@@ -59,7 +59,13 @@ public class LinkedList {
 		}
 		int targetId=scn.nextInt();
 		int newQuantity=scn.nextInt();
-		head=updateStock(head,targetId,new)
+		head=updateStock(head,targetId,newQuantity);
+		Node temp=head;
+		while(temp!=null) {
+			System.out.print(temp.quantity+" ");
+			temp=temp.next;
+		}
+		
 	}
 
 }
