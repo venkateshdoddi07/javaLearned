@@ -20,7 +20,7 @@ public class KotakDebitCard implements IATMService{
 	
 	
 
-	public KotakDebitCard(String name, long debitCardNumber, int pinNumber, double accountBalance) {
+	public KotakDebitCard(String name, long debitCardNumber, double accountBalance, int pinNumber) {
 		chances=3;
 		this.name = name;
 		this.debitCardNumber = debitCardNumber;
@@ -112,6 +112,8 @@ public class KotakDebitCard implements IATMService{
 			return;
 		}
 		System.out.println("============List 5 transaction =============");
+		Collections.reverse(statement);
+
 		for(String trans:statement) {
 			if(count==0) {
 				break;
@@ -119,7 +121,6 @@ public class KotakDebitCard implements IATMService{
 			System.out.println(trans);
 			count--;
 		}
-		Collections.reverse(statement);
 	}
 
 }

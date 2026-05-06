@@ -63,7 +63,7 @@ public class EmploymentManagement {
 		eal.set(2, new EmployeeArrayList(newIndex,"rama",28));
 		
 		System.out.println("finding the index of a  employee using indexOf");
-		System.out.println(eal.indexOf(3));
+		System.out.println(eal.indexOf(new EmployeeArrayList()));
 		
 		System.out.println("using size()");
 		System.out.println(eal.size());
