@@ -4,15 +4,19 @@ public class Student {
 
 	private int id;
 	private String name;
-	private int marks;
+	private int age;
 	
 
-	public Student(int id, String name, int marks) {
+	public Student(int id, String name, int age) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.marks = marks;
+		this.age = age;
 	}
+@Override
+public String toString() {
+	return "Student [id=" + id + ", name=" + name + ", age=" + age + "]";
+}
 
 
 	public int getId() {
@@ -36,12 +40,12 @@ public class Student {
 
 
 	public int getMarks() {
-		return marks;
+		return age;
 	}
 
 
-	public void setMarks(int marks) {
-		this.marks = marks;
+	public void setMarks(int age) {
+		this.age = age;
 	}
 	
 	
