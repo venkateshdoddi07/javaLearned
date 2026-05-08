@@ -6,14 +6,14 @@ import com.homework.beans.Employee;
 import com.homework.exceptions.EmployeeNotFoundException;
 
 public interface EmployeeDao {
-	public void save(Employee employee);
+	void save(Employee employee);
 
-	public List<Employee> findAll();
+ List<Employee> findAll();
 
-	public Employee findById(int id) throws EmployeeNotFoundException;
+	 Employee findById(int id) throws EmployeeNotFoundException;
 
-	public Employee update(Employee employee) throws EmployeeNotFoundException;
+	void update(Employee employee) throws EmployeeNotFoundException;
 
-	public void deleteById(int id) throws EmployeeNotFoundException;
+	void deleteById(int id) throws EmployeeNotFoundException;
 
 }
