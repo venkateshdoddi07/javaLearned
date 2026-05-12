@@ -25,7 +25,7 @@ public class ArrayPrintEven {
 				sum+=array[i];
 			}
 		}
-		System.err.println(sum);
+		System.out.println(sum);
 		
 		
 		
