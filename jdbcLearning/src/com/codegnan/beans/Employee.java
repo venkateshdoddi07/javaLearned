@@ -40,7 +40,7 @@ public double getSalary() {
 
 @Override
 public String toString() {
-	return "employee [id=" + id + ", name=" + name + ", department=" + department + ", salary=" + salary + "]";
+	return "employee [id=" + id + ", name=" + name  + ", department=" + department+ ", salary=" + salary+ "]";
 }
 
 
