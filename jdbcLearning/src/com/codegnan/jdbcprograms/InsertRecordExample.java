@@ -13,8 +13,8 @@ public class InsertRecordExample {
 	public static void main(String[] args) {
 		try (Connection connection = DriverManager.getConnection(jdbcUrl, userName, password);
 				Statement statement = connection.createStatement()) {
-			String sqlQuery = "insert into employee (ename,esal,eaddr) values('malli',50000,'hyd')";
-			//String sqlQuery = "insert into employee values(222,'mani',75000,'bgl')";
+			//String sqlQuery = "insert into employee (ename,esal,eaddr) values('malli',50000,'hyd')";
+			String sqlQuery = "insert into employee values(115,'mani',75000,'bgl')";
 			int rowsAffected= statement.executeUpdate(sqlQuery);
 			if(rowsAffected==1) {
 				System.out.println("Records inserted succesfully");

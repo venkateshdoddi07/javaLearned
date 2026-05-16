@@ -7,8 +7,10 @@ import java.util.Scanner;
 
 class groupingWords{
 	static void groupWord(List<String> list) {
-		HashMap<Character,List<String>> map=new HashMap<>();
+		HashMap<Character,List<String>> map=new HashMap<>();	
+		
 		for(String word:list) {
+			
 			char ch=word.charAt(0);
 			if(!map.containsKey(ch)) {
 				map.put(ch, new ArrayList<String>());

@@ -19,6 +19,8 @@ class Billing{
 				min=price;
 			}
 		}
+		
+		
 		double discount=0;
 		if(total>5000) {
 			discount=total*0.10;

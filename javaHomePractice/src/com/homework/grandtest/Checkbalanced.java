@@ -36,6 +36,7 @@ public class Checkbalanced {
 		boolean result=cb.checkBalanced(name);
 		if(result) {
 			System.out.println("Message Verified");
+			
 		}else {
 			System.out.println("Invalid Message");
 		}
