@@ -1,7 +1,7 @@
 package com.codegnan.Exceptions;
 
 public class EmployeeNotFoundException extends Exception {
-	EmployeeNotFoundException(String message){
+	public EmployeeNotFoundException(String message){
 		super(message);
 	}
 

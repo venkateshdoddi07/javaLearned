@@ -10,8 +10,8 @@ public class DBConnection {
 	private static final String password="12345678";
 	
 	
-	private static Connection getConnection() {
-		Connection con=null;
+	public static Connection getConnection() throws SQLException {
+		Connection con=null; 
 		try {
 			 con= DriverManager.getConnection(jdbcUrl,username,password);
 		} catch (SQLException e) {
