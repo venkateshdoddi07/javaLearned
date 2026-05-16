@@ -8,7 +8,7 @@ import com.codegnan.beans.Employee;
 public interface EmployeeService {
 	
 	void addEmployee(Employee employee);
-		List<Employee>getAllEmployee();
+		List<Employee>getAllEmployees();
 		Employee getEmployeeById(int id) throws EmployeeNotFoundException;
 		void updateEmployee(Employee employee)throws EmployeeNotFoundException;
 		void deleteEmployee(int id) throws EmployeeNotFoundException;
